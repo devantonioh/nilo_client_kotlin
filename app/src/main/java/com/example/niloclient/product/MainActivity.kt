@@ -129,6 +129,7 @@ class MainActivity : AppCompatActivity(), OnProductListener, MainAux {
         configButtons()
         configAnalytics()
 
+
         //fcm
         FirebaseMessaging.getInstance().token.addOnCompleteListener { task ->
             if (task.isSuccessful){
