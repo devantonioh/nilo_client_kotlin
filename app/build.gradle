@@ -1,0 +1,90 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+    id 'com.google.gms.google-services'
+    //id 'com.google.devtools.ksp' version '1.8.10-1.0.9' // quitar en el futuro
+///    id("com.google.devtools.ksp")
+    //id 'kotlin-kapt'
+
+}
+
+android {
+    namespace 'com.example.niloclient'
+    compileSdk 33
+
+    defaultConfig {
+        applicationId "com.example.niloclient"
+        minSdk 24
+        targetSdk 33
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    buildFeatures{
+        viewBinding true
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+}
+
+dependencies {
+
+    implementation 'androidx.core:core-ktx:1.10.1'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.9.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+
+    // FirebaseUI for Firebase Auth
+    implementation 'com.firebaseui:firebase-ui-auth:8.0.2'
+    // Declare the dependency for the Cloud Firestore library
+    implementation 'com.google.firebase:firebase-firestore-ktx'
+    // Add the dependency for the Realtime Database library
+    implementation 'com.google.firebase:firebase-database-ktx'
+    //Declare the dependencias for firebase Cloud Messaging and Analytics libaries
+    implementation 'com.google.firebase:firebase-messaging-ktx'
+    // Add the dependency for the Analytics library
+    implementation 'com.google.firebase:firebase-analytics-ktx'
+    // Add the dependency for the Cloud Storage library
+    implementation 'com.google.firebase:firebase-storage-ktx'
+    // FirebaseUI for Cloud Storage
+    implementation 'com.firebaseui:firebase-ui-storage:8.0.2'
+
+    // Add the dependencies for the Remote Config and Analytics libraries
+    implementation 'com.google.firebase:firebase-config-ktx'
+
+    // Required only if Facebook login support
+    implementation 'com.facebook.android:facebook-login:13.0.0'
+
+    //preferences
+    implementation 'androidx.preference:preference:1.2.0'
+
+    //Glide
+    implementation 'com.github.bumptech.glide:glide:4.15.1'
+    //ksp 'com.github.bumptech.glide:compiler:4.15.1'
+    //ksp("androidx.room:room-compiler:$room_version")
+   // implementation("com.github.bumptech.glide:okhttp3-integration:4.15.0")
+    //implementation 'com.github.bumptech.glide:glide:4.15.1'
+    //kapt 'com.github.bumptech.glide:compiler:4.15.1'
+    //def glide_version = "4.15.1"
+    //implementation 'com.github.bumptech.glide:glide:$glide_version'
+    //kapt 'com.github.bumptech.glide:compiler:$glide_version'
+    //annotationProcessor 'com.github.bumptech.glide:compiler:4.9.0'
+
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+}

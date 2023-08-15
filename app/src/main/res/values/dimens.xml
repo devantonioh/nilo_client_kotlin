@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="common_padding_min">8dp</dimen>
+    <dimen name="product_img_width">140dp</dimen>
+    <dimen name="common_padding_default">16dp</dimen>
+    <dimen name="product_preview_cart_height">80dp</dimen>
+    <dimen name="product_cart_img_size">48dp</dimen>
+    <dimen name="common_padding_medium">24dp</dimen>
+    <dimen name="track_margin_bottom_progress">14dp</dimen>
+    <dimen name="chat_guideline_end">48dp</dimen>
+    <dimen name="chat_stroke">1dp</dimen>
+    <dimen name="chat_margin_horizontal">64dp</dimen>
+    <dimen name="login_width_button">160dp</dimen>
+    <dimen name="profile_width_textfield">260dp</dimen>
+</resources>

@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">NiloClient</string>
+    <string name="product_msg_loading">Preparando todo…</string>
+    <string name="product_empty_cart">Carrito Vacio</string>
+    <string name="product_full_cart">Total: $%1$.2f USD</string>
+    <string name="product_view_cart">Ver carrito</string>
+
+    <string name="cart_title">Carrito de compra</string>
+    <string name="cart_pay">Pagar</string>
+
+    <string name="deatail_add_to_cart">Añadir al carrito</string>
+    <string name="detail_quantity">Disponible: %1$d</string>
+    <string name="detail_total_price">&lt;b>&lt;big> Total: $%1$.2f USD&lt;/big>&lt;/b>&lt;br/>(%2$d x $%3$.2f)</string>
+
+    <string name="order_track_shipment">Seguir Envio</string>
+    <string name="order_status">Estado: %1$s</string>
+    <string name="order_id">ID: %1$s</string>
+    <string name="order_chat_help">Necesitas ayuda?</string>
+
+    <string name="order_title">Historial de Compras</string>
+
+    <string name="order_status_ordered">Pedido</string>
+    <string name="order_status_preparing">Preparando</string>
+    <string name="order_status_sent">Enviado</string>
+    <string name="order_status_delivered">Entregado</string>
+    <string name="order_status_unknown">Desconocido</string>
+
+    <string name="track_title">Rastreo</string>
+    <string name="hint_chat">escribe algo…</string>
+    <string name="chat_title">Soporte</string>
+    <string name="notification_channel_id_default">general</string>
+    <string name="notification_channel_name_default">Generales</string>
+
+    <string name="facebook_application_id" translatable="false">3646835218880795</string>
+    <!-- Facebook Application ID, prefixed by 'fb'. Enables Chrome Custom tabs. -->
+    <string name="facebook_login_protocol_scheme" translatable="false">fb3646835218880795</string>
+    <string name="login_welcome">Bienvenido por favor inicie sesion.</string>
+    <string name="login_email">Email</string>
+    <string name="login_google">Google</string>
+    <string name="login_facebook">Facebook</string>
+    <string name="login_phone">Phone</string>
+    <string name="hint_full_name">nombre completo</string>
+    <string name="hint_photo_url">URL de foto</string>
+    <string name="profile_update">Actualizar</string>
+    <string name="product_menu_profile">Editar Perfil</string>
+    <string name="product_menu_sign_out">Cerrar sesión</string>
+    <string name="profile_title">Perfil de Usuario</string>
+
+    <string name="pref_fcm_title">Recibir notificaciones</string>
+    <string name="pref_offers_key">pref_offers</string>
+    <string name="pref_offers_title">Ofertas y Promociones</string>
+    <string name="product_menu_settings">Configuracion</string>
+    <string name="settings_topic_offers">topic_offers</string>
+    <string name="product_menu_history">Historial de Compras</string>
+    <string name="promo_title">Promociones</string>
+</resources>
